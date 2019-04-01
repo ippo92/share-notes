@@ -1,33 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+::selection {
+	background: black;
+	color: white;
+	text-shadow: none;
   }
-  to {
-    transform: rotate(360deg);
+  
+  * {
+	box-sizing: border-box;
   }
-}
+  
+  html {
+	font: normal 16px/24px "Open Sans", Helvetica, sans-serif;
+  }
+  
+  body {
+	background-color: #476173;
+	color: white;
+	padding: 3rem 2rem;
+  }
+  
+  a {
+	color: white;
+  }
+  
+  .site-header {
+	text-align: center;
+  }
+  .site-header h1 {
+	margin: 0 0 3rem;
+  }
+  
+  .note {
+	background: white;
+	box-shadow: 0 0.25rem 0.5rem -0.125rem rgba(0, 0, 0, 0.3), 0 0.575rem 0 -0.25rem #f2f2f2, 0 0.9rem 0.5rem -0.4rem rgba(0, 0, 0, 0.3), 0 1.12rem 0 -0.5rem #e6e6e6, 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.15);
+	color: #333;
+	margin: 0 auto 3rem;
+	padding: 1rem;
+	position: relative;
+	z-index: 100;
+	max-width: 25rem;
+  }
+  .note header {
+	border-bottom: 0.25rem solid #D9453F;
+	padding-bottom: 1rem;
+	position: relative;
+	min-height: 2.25rem;
+  }
+  .note .colors {
+	display: none;
+	margin-right: 50%;
+	overflow: hidden;
+  }
+  .note .colors .color {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-right: 0.25rem;
+	width: 1rem;
+	height: 1rem;
+  }
+  .note .colors .color:last-child {
+	margin-right: 0;
+  }
+  .note .colors .color-1 {
+	background-color: #D9453F;
+  }
+  .note .colors .color-2 {
+	background-color: #4790B0;
+  }
+  .note .colors .color-3 {
+	background-color: #3C994B;
+  }
+  .note .colors .color-4 {
+	background-color: #F2D060;
+  }
+  .note .colors .color-5 {
+	background-color: #FF774F;
+  }
+  .note .date {
+	color: #999;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-style: italic;
+	line-height: 1rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	height: 1rem;
+  }
+  .note .close {
+	color: #ccc;
+	cursor: pointer;
+	display: none;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1rem;
+	position: absolute;
+	top: -1px;
+	right: 0;
+	width: 0.9rem;
+	height: 1rem;
+  }
+  .note .close:focus, .note .close:hover {
+	color: #D9453F;
+  }
+  .note .content {
+	font-size: 1.2rem;
+	margin: 1rem 0;
+  }
+  .note .content p {
+	margin: 0 0 1rem;
+  }
+  .note .author {
+	background-color: #D9453F;
+	color: white;
+	cursor: default;
+	display: block;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 3rem;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  }
+  .note .avatar {
+	display: block;
+	float: right;
+	max-width: 3rem;
+	max-height: 3rem;
+  }
+  .note .avatar img {
+	max-width: 100%;
+	height: auto;
+	}
+	
